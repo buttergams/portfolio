@@ -1,3 +1,53 @@
 body {
-    background-color: papayawhip;
+    background-color: #1A1A1D;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border-color: #C3073F;
+}
+
+li, a, button {
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+
+
+
+#main {
+    display:flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.cImg {
+    max-height: 45%;
+    max-width: 100%;
+    border-radius: 15px;
+    margin: auto;
+}
+
+.pText1 {
+    max-height: 65%;
+    font-size: 32px;
+    text-align: center;
+}
+
+.pText2 {
+    max-height: 65%;
+    font-size: 32px;
+    text-align: center;
 }
