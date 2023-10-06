@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 body {
     background-color: #1A1A1D;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    color: #edf0f1;
 }
 
 * {
@@ -21,11 +24,60 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 10px 10%;
+    border-bottom: 3px solid #C3073F;
 }
 
+.logoName {
+    cursor: pointer;
+    order: 1;
+    height: 150px;
+    width: 200px;
+}
 
+nav {
+    order: 2;
+    margin-left: auto;
+}
 
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li:nth-child(1) {
+    padding: 0 20px 0 0;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: red
+}
+
+.btn {
+    order: 3;
+}
+
+button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: #C3073F;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: #6F2232;
+}
 
 #main {
     display:flex;
@@ -33,7 +85,44 @@ header {
     border-radius: 15px;
 }
 
-.cImg {
+.title {
+    padding: 0;
+    margin: 0 0 .4em;
+    color: inherit;
+    font-weight: 900;
+    text-rendering: optimizeLegibility;
+    line-height: 1.2;
+    text-align: center;
+    font-size: 48px;
+}
+
+.intro {
+    margin-top: .25em;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 28px;
+}
+
+.card-container {
+    display: flex; /*defaults to 'flex-direction: row;'*/
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 50%;
+}
+
+.card {
+    text-align: center;
+    height: 30%;
+    width: 30%;
+    margin: 0 auto;
+    padding: 1.5em 1em;
+}
+
+.pText1 {
+    text-align: center;
+}
+
+/* .cImg { 
     max-height: 45%;
     max-width: 100%;
     border-radius: 15px;
@@ -42,12 +131,13 @@ header {
 
 .pText1 {
     max-height: 65%;
-    font-size: 32px;
+    font-size: 28px;
     text-align: center;
 }
 
 .pText2 {
     max-height: 65%;
-    font-size: 32px;
+    font-size: 28px;
     text-align: center;
 }
+*/
