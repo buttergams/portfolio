@@ -12,6 +12,9 @@
 <body>
     <header>
         <img class="logoName" src="images/logoName.svg" alt="logoName">
+
+        <!-- Unordered list used to create navbar -->
+
         <nav>
             <ul class="nav-links">
                 <li><a href="./index.html">Home</a></li>
@@ -19,31 +22,140 @@
                 <li><a href="./about.html">About</a></li>
             </ul>
         </nav>
-        <a class="btn" href="./contact.html"><button>Contact Me</button></a>
+        <a class="btn" href="./contact.html"><button id="contactMe">Contact Me</button></a>
     </header>
     <br>
     <main id="main">
         <h1 class="title">Website Development Done Right</h1>
         <p class="intro">Hi! I'm Brandon, an aspiring UX/UI designer and freelance programmer. </p>
-        <!-- <img class="cImg" src="https://picsum.photos/1980/780" alt="random"> -->
+
+        <!-- Used divs to split up my desired design into cards, like how we did in class -->
+
         <div class="card-container">
             <div class="card">
                 <img class="frontendlogo" src="images/frontendlogo.svg">
                 <p class="front-end-card-bold"><b>Front-end Development</b></p>
-                <p class="front-end-card">Intuitive websites that provide a simple user experience and meets business needs.</p>
+                <p class="front-end-card">Intuitive websites that provide a simple user experience and meet business needs.</p>
             </div>
             <div class="card">
                 <img class="frontendlogo" src="images/frontendlogo.svg">
                 <p class="front-end-card-bold"><b>Front-end Development</b></p>
-                <p class="front-end-card">Intuitive websites that provide a simple user experience and meets business needs.</p>
+                <p class="front-end-card">Intuitive websites that provide a simple user experience and meet business needs.</p>
             </div>
             <div class="card">
                 <img class="frontendlogo" src="images/frontendlogo.svg">
                 <p class="front-end-card-bold"><b>Front-end Development</b></p>
-                <p class="front-end-card">Intuitive websites that provide a simple user experience and meets business needs.</p>
+                <p class="front-end-card">Intuitive websites that provide a simple user experience and meet business needs.</p>
             </div>
         </div>
-    
+        <hr>
+        <h1 class="feature-header">Featured Projects</h1>
+        
+        <!-- Beginning of CSS Grid to display projects -->
+
+        <div class="features-grid"> <!-- Start of first column. Splash logo with links and desc. of the project itself.-->
+            <div class="col1"> <!-- Container for the first column's items. -->
+                <div class="portfolio-links">
+                    <a class="firstProj" href="./portfolio.html" title="Project 1">
+                        <div class="link-thumbnail">
+                            <img class="project1logo" src="./images/project1logo.svg">
+                        </div>
+                        <div class="link-text">
+                            <h2>
+                                Project 1
+                            </h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio-content">
+                    <p class="portfolio-blurb">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis rem molestias deserunt a porro! Consequatur omnis autem inventore earum voluptatibus accusamus nesciunt doloribus deleniti et architecto?</p>
+                </div>
+            </div>
+
+            <div class="col2">
+                <div class="screenshots">
+                    <a title="Project 1" href="./portfolio.html">
+                        <img class="screenshot1" src="https://picsum.photos/1980/780">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <br>
+                <!-- Second Project Showcase -->
+        <div class="features-grid"> <!-- Start of first column. Splash logo with links and desc. of the project itself.-->
+            <div class="col1"> <!-- Container for the first column's items. -->
+                <div class="portfolio-links">
+                    <a class="firstProj" href="./portfolio.html" title="Project 1">
+                        <div class="link-thumbnail">
+                            <img class="project1logo" src="./images/project1logo.svg">
+                        </div>
+                        <div class="link-text">
+                            <h2>
+                                Project 2
+                            </h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio-content">
+                    <p class="portfolio-blurb">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis rem molestias deserunt a porro! Consequatur omnis autem inventore earum voluptatibus accusamus nesciunt doloribus deleniti et architecto?</p>
+                </div>
+            </div>
+
+            <div class="col2">
+                <div class="screenshots">
+                    <a title="Project 1" href="./portfolio.html">
+                        <img class="screenshot1" src="https://picsum.photos/1980/780">
+                    </a>
+                </div>
+            </div>
+        </div>
+                <!-- Third Project Showcase -->
+        <div class="features-grid">
+            <div class="col1">
+                <div class="portfolio-links">
+                    <a class="firstProj" href="./portfolio.html" title="Project 1">
+                        <div class="link-thumbnail">
+                            <img class="project1logo" src="./images/project1logo.svg">
+                        </div>
+                        <div class="link-text">
+                            <h2>
+                                Project 3
+                            </h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio-content">
+                    <p class="portfolio-blurb">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis rem molestias deserunt a porro! Consequatur omnis autem inventore earum voluptatibus accusamus nesciunt doloribus deleniti et architecto?</p>
+                </div>
+            </div>
+
+            <div class="col2">
+                <div class="screenshots">
+                    <a title="Project 1" href="./portfolio.html">
+                        <img class="screenshot1" src="https://picsum.photos/1980/780">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Buttons below the showcase section -->
+        <div class="buttonContainer">
+            <a class="below-feature-contact" href="./contact.html"><button id="learnMore">Learn More</button></a>
+            <a class="full-portfolio-btn" href="./portfolio.html"><button id="viewMore">View more projects</button></a>
+        </div>
+
+        <div class="footerContainer">
+            <div class="footer">
+                <div class="footer-heading footer-1">
+                    <h2>About Me</h2>
+                    <a href="#">Projects</a>
+                    <a href="#">Personal</a>
+                </div>
+            </div>
+        </div>
+            
+
     </main>
 
 </body>

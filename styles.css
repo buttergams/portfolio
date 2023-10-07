@@ -34,7 +34,7 @@ header {
     height: 150px;
     width: 200px;
 }
-
+/* This begins the navbar stylings */
 nav {
     order: 2;
     margin-left: auto;
@@ -65,7 +65,7 @@ nav {
     order: 3;
 }
 
-button {
+#contactMe {
     margin-left: 20px;
     padding: 9px 25px;
     background-color: #C3073F;
@@ -101,43 +101,106 @@ button:hover {
     line-height: 1.5;
     text-align: center;
     font-size: 28px;
+    padding-bottom: 1em;
 }
 
 .card-container {
-    display: flex; /*defaults to 'flex-direction: row;'*/
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     max-width: 50%;
+    margin: 0 auto;
+    padding-bottom: 25px;
 }
 
 .card {
     text-align: center;
-    height: 30%;
-    width: 30%;
+    flex: 1;
+    max-width: 25%;
     margin: 0 auto;
     padding: 1.5em 1em;
+    justify-content: space-between;
+    border-width: 5px;
+    border-style: solid;
+    background-color: #383839;
+    border-color: #C3073F;
+    border-radius: 55px;
 }
 
-.pText1 {
+.front-end-card-bold {
+    font-size: 20px;
+    padding: .25em;
+}
+
+.feature-header {
+    padding: .5em;
+    margin: 0 0 .4em;
+    color: inherit;
+    font-weight: 900;
+    text-rendering: optimizeLegibility;
+    line-height: 1.2;
+    text-align: center;
+    font-size: 48px;
+}
+
+.features-grid {
+    display: grid;
+    grid-row-gap: 20px;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 0;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 100px;
+}
+
+.col1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: #383839;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.project1logo {
+    background-color: #4e4e50;
+}
+
+.portfolio-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding-top: 1.5em;
+}
+
+.portfolio-content {
+    text-align: left;
+    font-size: 22px;
+    padding: 0 1.5em 0 1.5em;
+}
+.col2 {
+    grid-column-start: 2;
+    grid-column-end: -1;
+}
+
+.screenshots {
+    background-color: #6F2232;
+}
+
+.screenshot1 {
+    max-width: 1310px;
+}
+.buttonContainer {
+    flex-direction: column;
     text-align: center;
 }
-
-/* .cImg { 
-    max-height: 45%;
-    max-width: 100%;
-    border-radius: 15px;
-    margin: auto;
+#learnMore {
+    padding: 9px 25px;
+    background-color: #C3073F;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
 }
-
-.pText1 {
-    max-height: 65%;
-    font-size: 28px;
-    text-align: center;
-}
-
-.pText2 {
-    max-height: 65%;
-    font-size: 28px;
-    text-align: center;
-}
-*/
