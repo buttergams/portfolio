@@ -12,6 +12,9 @@
 <body>
     <header>
         <img class="logoName" src="images/logoName.svg" alt="logoName">
+
+        <!-- Unordered list used to create navbar -->
+
         <nav>
             <ul class="nav-links">
                 <li><a href="./index.html">Home</a></li>
@@ -19,17 +22,135 @@
                 <li><a href="./about.html">About</a></li>
             </ul>
         </nav>
-        <a class="btn" href="./contact.html"><button>Contact Me</button></a>
+        <a class="btn" href="./contact.html"><button id="contactMe">Contact Me</button></a>
     </header>
 
     <br>
 
     <main id="main">
-        <img class="cImg" src="https://picsum.photos/1980/780" alt="random">
-    <p class="pText1">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt   ut labore et dolore magna aliqua. At augue eget arcu dictum varius. Turpis in eu mi bibendum. Orci phasellus egestas tellus rutrum tellus. Quis commodo odio aenean sed. Morbi tempus iaculis urna id volutpat lacus. Proin sed libero enim sed faucibus. Arcu cursus vitae congue mauris. Augue eget arcu dictum varius. Tincidunt tortor aliquam nulla facilisi cras fermentum odio. Amet mauris commodo quis imperdiet. Fames ac turpis egestas maecenas. Dictum sit amet justo donec enim diam. Enim facilisis gravida neque convallis a cras semper auctor neque. Risus in hendrerit gravida rutrum quisque non tellus orci ac. Eget arcu dictum varius duis at consectetur. Nisi scelerisque eu ultrices vitae auctor eu. Commodo quis imperdiet massa tincidunt.
-    </p>
-    
+        <div class="features-grid"> <!-- Start of first column. Splash logo with links and desc. of the project itself.-->
+            <div class="col1"> <!-- Container for the first column's items. -->
+                <div class="portfolio-links">
+                    <a class="firstProj" href="https://github.com/buttergams" title="Project 1">
+                        <div class="link-thumbnail">
+                            <img class="project1logo" src="./images/project1logo.svg">
+                        </div>
+                        <div class="link-text">
+                            <h2>
+                                Project 1
+                            </h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio-content">
+                    <p class="portfolio-blurb">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis rem molestias deserunt a porro! Consequatur omnis autem inventore earum voluptatibus accusamus nesciunt doloribus deleniti et architecto?</p>
+                </div>
+            </div>
+
+            <div class="col2">
+                <div class="screenshots">
+                    <a title="Project 1" href="./portfolio.html">
+                        <img class="screenshot1" src="https://picsum.photos/1980/780">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <br>
+                <!-- Second Project Showcase -->
+        <div class="features-grid"> <!-- Start of first column. Splash logo with links and desc. of the project itself.-->
+            <div class="col1"> <!-- Container for the first column's items. -->
+                <div class="portfolio-links">
+                    <a class="firstProj" href="https://github.com/buttergams" title="Project 1">
+                        <div class="link-thumbnail">
+                            <img class="project1logo" src="./images/project1logo.svg">
+                        </div>
+                        <div class="link-text">
+                            <h2>
+                                Project 2
+                            </h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio-content">
+                    <p class="portfolio-blurb">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis rem molestias deserunt a porro! Consequatur omnis autem inventore earum voluptatibus accusamus nesciunt doloribus deleniti et architecto?</p>
+                </div>
+            </div>
+
+            <div class="col2">
+                <div class="screenshots">
+                    <a title="Project 1" href="./portfolio.html">
+                        <img class="screenshot1" src="https://picsum.photos/1980/780">
+                    </a>
+                </div>
+            </div>
+        </div>
+                <!-- Third Project Showcase -->
+        <div class="features-grid">
+            <div class="col1">
+                <div class="portfolio-links">
+                    <a class="firstProj" href="https://github.com/buttergams" title="Project 1">
+                        <div class="link-thumbnail">
+                            <img class="project1logo" src="./images/project1logo.svg">
+                        </div>
+                        <div class="link-text">
+                            <h2>
+                                Project 3
+                            </h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio-content">
+                    <p class="portfolio-blurb">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis rem molestias deserunt a porro! Consequatur omnis autem inventore earum voluptatibus accusamus nesciunt doloribus deleniti et architecto?</p>
+                </div>
+            </div>
+
+            <div class="col2">
+                <div class="screenshots">
+                    <a title="Project 1" href="./portfolio.html">
+                        <img class="screenshot1" src="https://picsum.photos/1980/780">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Buttons below the showcase section -->
+        <!-- <div class="buttonContainer"> -->
+            <!-- <a class="below-feature-contact" href="./contact.html"><button id="learnMore">Learn More</button></a> -->
+            <!-- <a class="full-portfolio-btn" href="./portfolio.html"><button id="viewMore">View more projects</button></a> -->
+        <!-- </div> -->
+
+        <footer class="footer"> <!-- This footer has basic links to other pages as well as a fun attempt at making social media links. Seems like the repo for the icons isn't working however.-->
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Professional</h4>
+                        <ul>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Personal</h4>
+                        <ul>
+                            <li><a href="about.html">about me</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow me</h4>
+                        <div class="social-links">
+                            <a href="https://github.com/buttergams"><i class="github"></i></a>
+                            <a href="https://www.linkedin.com/in/brandon-blumenberg-bb98441ba/"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://twitter.com/buttergams"><i class="twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright"> <!-- ez pz copyright-->
+            <p>Copyright © 2023 Brandon Blumenberg</p>
+            <br>
+            <p>Made using HTML 5, CSS, Visual Studio Code, Canva, and GitHub.</p>
+        </div>
     </main>
 
 </body>
