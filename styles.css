@@ -219,10 +219,11 @@ button:hover {
 ul{
 	list-style: none;
 }
+/* This is the start of the footer */
 .footer{
 	background-color: #24262b;
-    padding: 100px 0;
-    border-top: 3px solid #C3073F;;
+    padding: 75px 0;
+    border-top: 3px solid #C3073F;
 }
 .footer-col{
     width: 25%;
@@ -297,3 +298,30 @@ ul{
     background-color: #24262b;
     text-align: center;
 }
+
+.contact-container {
+    width: 80%;
+    margin: 50px auto;
+
+}
+
+.contact-box{
+    background-color: #24262b;
+    display: flex;
+}
+
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+
+.contact-right{
+    flex-basis: 40%;
+    padding: 40px;
+}
+
+.connect{
+    margin-bottom: 10px;
+
+}
+

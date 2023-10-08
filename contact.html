@@ -12,9 +12,6 @@
 <body>
     <header>
         <img class="logoName" src="images/logoName.svg" alt="logoName">
-
-        <!-- Unordered list used to create navbar -->
-
         <nav>
             <ul class="nav-links">
                 <li><a href="./index.html">Home</a></li>
@@ -28,10 +25,40 @@
     <br>
 
     <main id="main">
-        <img class="cImg" src="https://picsum.photos/1980/780" alt="random">
-    <p class="pText1">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt   ut labore et dolore magna aliqua. At augue eget arcu dictum varius. Turpis in eu mi bibendum. Orci phasellus egestas tellus rutrum tellus. Quis commodo odio aenean sed. Morbi tempus iaculis urna id volutpat lacus. Proin sed libero enim sed faucibus. Arcu cursus vitae congue mauris. Augue eget arcu dictum varius. Tincidunt tortor aliquam nulla facilisi cras fermentum odio. Amet mauris commodo quis imperdiet. Fames ac turpis egestas maecenas. Dictum sit amet justo donec enim diam. Enim facilisis gravida neque convallis a cras semper auctor neque. Risus in hendrerit gravida rutrum quisque non tellus orci ac. Eget arcu dictum varius duis at consectetur. Nisi scelerisque eu ultrices vitae auctor eu. Commodo quis imperdiet massa tincidunt.
-    </p>
+        <h1>Let's Chat!</h1>
+        <p class="subtitle">Send me a message, or let's discuss projects you'd like to collaborate on! I'll return your message as soon as possible.</p>
+        <form action="submit_form.php" method="post">
+            <input type="hidden" name="form-name" value="contact">
+            <fieldset>
+                <legend>About You</legend>
+                <div class="">
+                    <div>
+                        <label for="name">Your name
+                            <span class="req" title="required">*</span>
+                        </label>
+                        <input class="full" id="name" type="text" name="name" required="" placeholder="ex. Brandon Blumenberg">
+                    </div>
+                    <div>
+                        <label for="email">Email
+                            <span class="req" title="required">*</span>
+                        </label>
+                        <input class="full" id="email" type="email" name="email" required="" placeholder="blumenberg0215@gmail.com">
+                    </div>
+                    <div>
+                        <label for="website">Your website</label>
+                        <input class="full" id="website" type="text" name="website" placeholder="ex. buttergams.github.io/portfolio/">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <label class="contact-module--legend--2NQY3" for="message">General Message
+                    <span class="req" title="required">*</span>
+                </label>
+                <textarea id="message" name="message" rows="6" required=""></textarea>
+            </fieldset>
+            <button type="submit" class="button">Send</button>
+        </form>
+    </main>
 
     <footer class="footer">
         <div class="container">
@@ -64,8 +91,8 @@
         <br>
         <p>Made using HTML 5, CSS, Visual Studio Code, and GitHub.</p>
     </div>
-    
-    </main>
+
+</main>
 
 </body>
 
